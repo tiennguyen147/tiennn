@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Thêm màu nền cho body */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+header img {
+    max-height: 50px;
+    margin-bottom: 5px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff5722;
+}
+.ad-banner {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite;
+}
+.banner {
+    background-color: orange;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    right: 5px;
+    top: 2;
+    margin: 0%;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-section {
+    flex: 3;
+}
+
+.product-background img {
+    width: 100%;
+    height: auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    border-color: #ff5722;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-links div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links p {
+    margin-bottom: 5px;
+}
+
+.footer-links input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.footer-links input[type="email"]:focus {
+    outline: none;
+    border: 2px solid #ff5722;
+}
